@@ -1,0 +1,15 @@
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+_:n4febab94f3c74527bc542404d722829ab5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicRecord> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:n4febab94f3c74527bc542404d722829ab4 .
+_:n4febab94f3c74527bc542404d722829ab4 <http://www.w3.org/2002/07/owl#unionOf> _:n4febab94f3c74527bc542404d722829ab5 .
+_:n4febab94f3c74527bc542404d722829ab6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicReference> .
+_:n4febab94f3c74527bc542404d722829ab6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n4febab94f3c74527bc542404d722829ab5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4febab94f3c74527bc542404d722829ab6 .
+_:n4febab94f3c74527bc542404d722829ab4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/biro/isReferencedBy> <http://purl.org/vocab/vann/example> "\n    :my-paper\n        biro:isReferencedBy :my-bibliographic-reference .\n    " .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

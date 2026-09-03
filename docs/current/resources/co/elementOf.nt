@@ -1,0 +1,4 @@
+<http://purl.org/co/elementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is element of"@en .
+<http://purl.org/co/elementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The link to a collection in which the object is member."@en .
+<http://purl.org/co/elementOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/co/> .
+<http://purl.org/co/elementOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/co/element> .
