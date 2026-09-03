@@ -34,7 +34,7 @@
         "@id": "http://purl.org/vocab/frbr/core#Work"
       },
       {
-        "@id": "_:n4febab94f3c74527bc542404d722829ab16"
+        "@id": "_:nb177f51282094da592ca3c364231e08fb16"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "@id": "_:n4febab94f3c74527bc542404d722829ab16",
+    "@id": "_:nb177f51282094da592ca3c364231e08fb16",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

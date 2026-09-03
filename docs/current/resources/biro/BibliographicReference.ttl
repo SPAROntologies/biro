@@ -15,7 +15,11 @@ biro:BibliographicReference a owl:Class ;
         co:elementOf :my-bibliographic-record ;
         frbr:realizationOf :my-bibliographic-record .
     """ ;
-    rdfs:comment "An expression of a bibliographic record in a specific format, that references a particular textual or data publication (or a work in preparation for publication). Each bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.  Note that because different journal styles may require omission of elements of the bibliographic record in references included in a paper's reference list (e.g. the title, the identifier, the names of the eighth and subsequent authors), and because errors can be introduced when an author creates a bibliographic reference, the bibliographic reference to a published work may not be a complete or fully accurate expression of the information contained within the authoritative bibliographic record for that work."@en ;
+    rdfs:comment """
+A textual reference within one creative work that references another creative work such as a journal article or a data publication (or a work in preparation for publication).
+The bibliographic reference is an expression of the bibliographic record of that cited work in a specific format. 
+Each bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.
+    """@en ;
     rdfs:isDefinedBy biro: ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
