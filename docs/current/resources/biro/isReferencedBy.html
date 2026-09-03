@@ -229,12 +229,16 @@ biro:isReferencedBy a owl:ObjectProperty ;
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  &lt;rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb4">
+    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    &lt;owl:unionOf rdf:nodeID="nb177f51282094da592ca3c364231e08fb5"/>
+  &lt;/rdf:Description>
   &lt;rdf:Description rdf:about="http://purl.org/spar/biro/isReferencedBy">
     &lt;rdfs:comment xml:lang="en">The relation between a publication and the bibliographic record or bibliographic reference describing it.&lt;/rdfs:comment>
     &lt;rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    &lt;rdfs:range rdf:nodeID="n4febab94f3c74527bc542404d722829ab4"/>
     &lt;rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     &lt;rdfs:isDefinedBy rdf:resource="http://purl.org/spar/biro/"/>
+    &lt;rdfs:range rdf:nodeID="nb177f51282094da592ca3c364231e08fb4"/>
     &lt;rdfs:label xml:lang="en">is referenced by&lt;/rdfs:label>
     &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     &lt;vann:example>
@@ -243,15 +247,11 @@ biro:isReferencedBy a owl:ObjectProperty ;
     &lt;/vann:example>
     &lt;vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   &lt;/rdf:Description>
-  &lt;rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab5">
+  &lt;rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb5">
     &lt;rdf:first rdf:resource="http://purl.org/spar/biro/BibliographicRecord"/>
-    &lt;rdf:rest rdf:nodeID="n4febab94f3c74527bc542404d722829ab6"/>
+    &lt;rdf:rest rdf:nodeID="nb177f51282094da592ca3c364231e08fb6"/>
   &lt;/rdf:Description>
-  &lt;rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab4">
-    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    &lt;owl:unionOf rdf:nodeID="n4febab94f3c74527bc542404d722829ab5"/>
-  &lt;/rdf:Description>
-  &lt;rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab6">
+  &lt;rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb6">
     &lt;rdf:first rdf:resource="http://purl.org/spar/biro/BibliographicReference"/>
     &lt;rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   &lt;/rdf:Description>
@@ -291,7 +291,7 @@ biro:isReferencedBy a owl:ObjectProperty ;
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n4febab94f3c74527bc542404d722829ab4"
+        "@id": "_:nb177f51282094da592ca3c364231e08fb4"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -306,7 +306,7 @@ biro:isReferencedBy a owl:ObjectProperty ;
     ]
   },
   {
-    "@id": "_:n4febab94f3c74527bc542404d722829ab4",
+    "@id": "_:nb177f51282094da592ca3c364231e08fb4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -323,20 +323,20 @@ biro:isReferencedBy a owl:ObjectProperty ;
       }
     ]
   }
-]</code></pre></div><div class="tab-pane fade" id=id_80fcce3ead303d97328dc707a09bd0a2_Relation_prov_4 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en .
+]</code></pre></div><div class="tab-pane fade" id=id_80fcce3ead303d97328dc707a09bd0a2_Relation_prov_4 role=tabpanel><pre class="mb-0 small"><code>_:nb177f51282094da592ca3c364231e08fb4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> .
+&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en .
+_:nb177f51282094da592ca3c364231e08fb4 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nb177f51282094da592ca3c364231e08fb5 .
+_:nb177f51282094da592ca3c364231e08fb5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicRecord> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://www.w3.org/2002/07/owl#topObjectProperty> .
-_:n4febab94f3c74527bc542404d722829ab5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicRecord> .
-&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:n4febab94f3c74527bc542404d722829ab4 .
-_:n4febab94f3c74527bc542404d722829ab4 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n4febab94f3c74527bc542404d722829ab5 .
-_:n4febab94f3c74527bc542404d722829ab6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicReference> .
-_:n4febab94f3c74527bc542404d722829ab6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nb177f51282094da592ca3c364231e08fb6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicReference> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> .
-_:n4febab94f3c74527bc542404d722829ab5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4febab94f3c74527bc542404d722829ab6 .
-_:n4febab94f3c74527bc542404d722829ab4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> .
+_:nb177f51282094da592ca3c364231e08fb6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:nb177f51282094da592ca3c364231e08fb4 .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://purl.org/vocab/vann/example> "\n    :my-paper\n        biro:isReferencedBy :my-bibliographic-reference .\n    " .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> .
+_:nb177f51282094da592ca3c364231e08fb5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nb177f51282094da592ca3c364231e08fb6 .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> .
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

@@ -7,18 +7,17 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab11">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="n4febab94f3c74527bc542404d722829ab12"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+  <rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:complementOf rdf:resource="http://purl.org/spar/biro/BibliographicCollection"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/biro/BibliographicCollection">
-    <rdfs:subClassOf rdf:nodeID="n4febab94f3c74527bc542404d722829ab10"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:nodeID="nb177f51282094da592ca3c364231e08fb12"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/co/Set"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <rdfs:subClassOf rdf:nodeID="n4febab94f3c74527bc542404d722829ab9"/>
-    <rdfs:subClassOf rdf:nodeID="n4febab94f3c74527bc542404d722829ab11"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:nodeID="nb177f51282094da592ca3c364231e08fb9"/>
+    <rdfs:subClassOf rdf:nodeID="nb177f51282094da592ca3c364231e08fb10"/>
     <vann:example>
     :my-bibliographic-collection a biro:BibliographicCollection ;
         co:element :my-bibliographic-record ;
@@ -30,18 +29,19 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/biro/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab9">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/biro/BibliographicList"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab12">
-    <owl:complementOf rdf:resource="http://purl.org/spar/biro/BibliographicCollection"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4febab94f3c74527bc542404d722829ab10">
+  <rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb9">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:resource="http://purl.org/spar/biro/BibliographicRecord"/>
     <owl:onProperty rdf:resource="http://purl.org/co/element"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <owl:allValuesFrom rdf:nodeID="nb177f51282094da592ca3c364231e08fb11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nb177f51282094da592ca3c364231e08fb12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/biro/BibliographicList"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
   </rdf:Description>
 </rdf:RDF>
